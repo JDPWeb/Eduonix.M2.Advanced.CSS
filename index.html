@@ -4,20 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Styling -->
-
-    <link rel="stylesheet" href="css/reset.css">
+    <title>Eduonix Module 2: Advanced CSS</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <section id="home">
+            <h1 class="mainTitle">Hi! My name is Juan Díaz Peña.</h1>
+            <img src="img/main.jpg" alt="Juan's Portrait" title="What a handsome dude!">
+            <p class="bigText">Future web developer based in Costa Rica.</p>
+        </section>
+
+        <section id="about">
+            <h2 class="title2">About me</h2>
+            <p>I was born and raised in Costa Rica, a tiny country in Central America between Nicaragua, North of Costa Rica and Panama, to the South. The Caribean Sea to the East and Pacific Ocean to the West.
+            </p>
+            <p>I decided to do something different that will allow me to work closely with two passions of mine, design and technology. I always enjoyed drawing and I was drawn to art itself as a youngling and then design came as a natural progression. Technology on the other hand is plain awesome! New ways of doing things, of making life easier for people with challenges in their daily living with clever ideas. So, in short, I want to create things to help people out.
+            </p>
+            <p>The words I live by are, “If you don’t have time to do it right, when do you expect to have time to do it again?”. Not sure who’s quote is that, but I can tell it’s not mine. Still, there’s a lot of wisdom to them, I really try to apply them and avoid rushing myself. I firmly believe that rushing yourself to finish last with a poorly done job is a true waste of time.
+            </p>
+        </section>
+
+        <section id="show">
+            <h2 class="title2">Cool things I like to show</h2>
+            <p>The following is a list of a few things I like to show people because they are awesome. Sometimes you are unaware of things around you and perhaps, what you need is someone to show you a little bit, for you to wet your toes as they say and then, take off</p>
+            <dl>
+                <dt>AC/DC's song, Shoot to thrill</dt>
+                <dd>Maybe you are not a rock fan, maybe you are, regardless of that, this is a great song anyone can enjoy. Released back on July 25 1980 and included in the Back in Black album. Later it was used as part of Ironman 2's soundtrack and still as fresh as when it was released.</dd>
+                
+                <a href="https://www.youtube.com/watch?v=wLoWd2KyUro" target="_blank" class="button">C'mon, check it out</a>
+            </dl>
+            <dl>
+                <dt>Gattaca (1997)</dt>
+                <dd>Cool Sci-Fi movie honestly. Really gets you to think about how plausible its premise would be nowadays.</dd>
+                
+                <a href="https://www.imdb.com/title/tt0119177/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+            </dl>
+            <dl>
+                <dt>The Game (1997)</dt>
+                <dd>Suspense thriller could be the genre of this piece. Well developed and great acting by Sean Penn.</dd>
+                
+                <a href="https://www.imdb.com/title/tt0119174/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+            </dl>
+            <dl>
+                <dt>The Orphanage (2007)</dt>
+                <dd>An awesome horror flick. Will keep on the edge and scared of staying by yourself in a dark room.</dd>
+                
+                <a href="https://www.imdb.com/title/tt0464141/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+            </dl>
+            <dl>
+                <dt>The Sandlot (1993)</dt>
+                <dd>Terrific movie for the whole family. As a kid this was one of my big time favorite movies and still to this date I enjoy it a lot.</dd>
+                
+                <a href="https://www.imdb.com/title/tt0108037/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+            </dl>
+        </section>
+
+        <section id="movies">
+
+            <h2 class="title2">My movie recommendation</h2>
+            <p>The following is a list of 5 movies I really think people should see and enjoy at some point. Below you will find the list and the trailer so you can see for yourself if it would worth your while.
+            </p>
+
+            <div class="tabs">
+
+                <div class="tab">
+
+                    <input type="checkbox" id="check1">
+                    <label for="check1" class="tab-label">Shawshank Redemption (1994)</label>
+
+                    <div class="tab-content">
+
+                        <p>Simply awesome and guaranteed to give you that feel-good feeling at the end of it.</p>
+
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/NmzuHjWmXOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <a href="https://www.imdb.com/title/tt0111161/" target="_blank" class="button">Check on IMDb</a>
+
+                    </div>
+
+                </div>
+
+                <div class="tab">
+
+                    <input type="checkbox" id="check2">
+                    <label for="check2" class="tab-label">Gattaca (1997)</label>
+
+                    <div class="tab-content">
+
+                        <p>Cool Sci-Fi movie honestly. Really gets you to think about how plausible its premise would be nowadays.</p>
+
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/W_KruQhfvW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        <a href="https://www.imdb.com/title/tt0119177/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+
+                    </div>
+
+                </div>
+
+                <div class="tab">
+
+                    <input type="checkbox" id="check3">
+                    <label for="check3" class="tab-label">The Game (1997)</label>
+
+                    <div class="tab-content">
+
+                        <p>Suspense thriller could be the genre of this piece. Well developed and great acting by Sean Penn.</p>
+
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/nsKdR05ZsGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <a href="https://www.imdb.com/title/tt0119174/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+
+                    </div>
+
+                </div>
+
+                <div class="tab">
+
+                    <input type="checkbox" id="check4">
+                    <label for="check4" class="tab-label">The Orphanage (2007)</label>
+
+                    <div class="tab-content">
+
+                        <p>An awesome horror flick. Will keep on the edge and scared of staying by yourself in a dark room.</p>
+
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/UkuKtS-N1rM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <a href="https://www.imdb.com/title/tt0464141/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+
+                    </div>
+
+                </div>
+
+                <div class="tab">
+
+                    <input type="checkbox" id="check5">
+                    <label for="check5" class="tab-label">The Sandlot (1993)</label>
+
+                    <div class="tab-content">
+
+                        <p>Terrific movie for the whole family. As a kid this was one of my big time favorite movies and still to this date I enjoy it a lot.</p>
+
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/iXOOL6SygW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <a href="https://www.imdb.com/title/tt0108037/?ref_=fn_al_tt_1" target="_blank">Check on IMDb</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer ><p>JDPWeb. All rights reserved 2021.</p></footer>
+
+    </div>
 </body>
 </html>

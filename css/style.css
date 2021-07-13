@@ -1,3 +1,168 @@
-*{
+:root{
+    font-size: 16px;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
+    background-color: #f8f1f1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 2rem 1rem;
+}
+
+.title2{
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.bigText{
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.button{
+    text-decoration: none;
+    color: #dc4040;
+    font-weight: 700;
+    background-color: #f8f1f1;
+    padding: 1rem 2rem;
+    border: 5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
+    border-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
+    border-image-slice: 1;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: #f8f1f1;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
+    padding: 1rem 2rem;
+    border: 5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
+    border-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#home{
+    background-image: linear-gradient(#31bacc,#f8f1f1);
+}
+
+#home img{
+    border-radius: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 1.6rem 0.8rem;
+    padding: 0 1rem;
+}
+
+iframe{
+    margin: 0 auto;
+    clear: both;
+    display: block;
+}
+
+footer{
+    height: 4rem;
+    background-color: #31bacc;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/*CSS Accordion*/
+
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tabs{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab{
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.tab-label:hover{
+    opacity: 0.8;
+}
+
+.tab-label:after{
+    content: "\276f";
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.tab-content{
+    max-height: 0;
+    padding: 0 1rem;
+    color: #151025;
+    background: #fff;
+    transition: all 0.35s;
+}
+
+/*Color change indicate which tab*/
+input:checked +.tab-label{
+    background: rgba(10, 47, 158, 1);
+}
+
+input:checked + .tab-label:after{
+    transform: rotate(90deg);
+}
+
+input:checked ~ .tab-content{
+    max-height: 100vh;
+    padding: 2rem;
 }

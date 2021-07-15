@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/1af8bad6b4.js" crossorigin="anonymous"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,6 +20,20 @@
 
 <body>
     <div class="container">
+
+        <nav id="hamnav">
+            <!-- (B) THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- (C) MENU ITEMS -->
+            <div id="hamitems">
+              <a href="#home"><i class="fas fa-home"></i>   Home</a>
+              <a href="#about"><i class="fas fa-user-astronaut"></i>    About me</a>
+              <a href="#show"><i class="fas fa-surprise"></i>   Cool things...</a>
+              <a href="#movies"><i class="fas fa-film"></i> My movie recommendation</a>
+            </div>
+        </nav>
 
         <section id="home">
             <h1 class="mainTitle">Hi! My name is Juan Díaz Peña.</h1>
@@ -27,7 +43,7 @@
 
         <section id="about">
             <h2 class="title2">About me</h2>
-            <p>I was born and raised in Costa Rica, a tiny country in Central America between Nicaragua, North of Costa Rica and Panama, to the South. The Caribean Sea to the East and Pacific Ocean to the West.
+            <p>I was born and raised in Costa Rica, a tiny country in Central America between Nicaragua, North of Costa Rica and Panama, to the South. The Caribbean Sea to the East and Pacific Ocean to the West.
             </p>
             <p>I decided to do something different that will allow me to work closely with two passions of mine, design and technology. I always enjoyed drawing and I was drawn to art itself as a youngling and then design came as a natural progression. Technology on the other hand is plain awesome! New ways of doing things, of making life easier for people with challenges in their daily living with clever ideas. So, in short, I want to create things to help people out.
             </p>
@@ -38,41 +54,43 @@
         <section id="show">
             <h2 class="title2">Cool things I like to show</h2>
             <p>The following is a list of a few things I like to show people because they are awesome. Sometimes you are unaware of things around you and perhaps, what you need is someone to show you a little bit, for you to wet your toes as they say and then, take off</p>
-            <dl>
-                <dt>AC/DC's song, Shoot to thrill</dt>
-                <dd>Maybe you are not a rock fan, maybe you are, regardless of that, this is a great song anyone can enjoy. Released back on July 25 1980 and included in the Back in Black album. Later it was used as part of Ironman 2's soundtrack and still as fresh as when it was released.</dd>
-                <img src="/img/backInBlackCover.png" alt="Back in Black original album cover.">
-                
+
+            <div class="card">
+                <dl class="card-content">
+                    <dt>AC/DC's song, Shoot to thrill</dt>
+                    <dd>Maybe you are not a rock fan, maybe you are, regardless of that, this is a great song anyone can enjoy. Released back on July 25 1980 and included in the Back in Black album. Later it was used as part of Ironman 2's soundtrack and still as fresh as when it was released.</dd>
+                    <dd>Check it out on <a href="#">Wikipedia</a></dd>
+                </dl>
+                <img src="img/backinblack.png" alt="Back in Black original album cover.">
                 <a href="https://www.youtube.com/watch?v=wLoWd2KyUro" target="_blank" class="button">C'mon, listen this!</a>
-            </dl>
+            </div>
+
             <dl>
                 <dt>Kim Jung Gi</dt>
                 <dd>This dude is just out of this world. Seriously, check out his art, his style. Then, watch him and you will realize the sheer caliber of this man as an artist. He cracked the code and he is able to put what he visualizes in his mind on the canvas.</dd>
-                <img src="/img/kjgart.jpg" alt="Ink drawing of Batman, Catwoman and The Joker.">
-                
-                <a href="https://www.youtube.com/watch?v=OmLkBQmZQM8" target="_blank">Sketchbook tour!</a>
+                <dd><img src="/img/kjgart.jpg" alt="Ink drawing of Batman, Catwoman and The Joker."></dd>                
+                <dd><a href="https://www.youtube.com/watch?v=OmLkBQmZQM8" target="_blank">Sketchbook tour!</a></dd>
             </dl>
+
             <dl>
                 <dt>Vista Guapa Surf Camp (CRC)</dt>
                 <dd>A beautiful place in the Pacific coast of Costa Rica, my home country. Fell in love with the place and more so, with my GF lol.</dd>
-                <img src="/img/vistaGuapa.jpg" alt="Vista Guapa Surf Camp accomodations.">
-                
-                <a href="https://www.youtube.com/watch?v=nFQciHDZ19U" target="_blank">Watch it mate!</a>
+                <dd><img src="/img/vistaGuapa.jpg" alt="Vista Guapa Surf Camp accomodations."></dd>
+                <dd><a href="https://www.youtube.com/watch?v=nFQciHDZ19U" target="_blank">Watch it mate!</a></dd>                
             </dl>
+
             <dl>
                 <dt>Coolors</dt>
                 <dd>Coolors is a great tool to create color schemes for your sites, illustrations, to play around, you name it. Really like the clean interface and the fact that you can save those palettes and export them in many different ways that can suit your needs.</dd>
-                <img src="/img/coolors.png" alt="Coolors quick glance at the interface.">
-                
-                <a href="https://coolors.co/" target="_blank">This is dope!</a>
+                <dd><img src="/img/coolors.png" alt="Coolors quick glance at the interface."></dd>                
+                <dd><a href="https://coolors.co/" target="_blank">This is dope!</a></dd>
             </dl>
+
             <dl>
                 <dt>"Devorador de Mundos"</dt>
                 <dd>Devourer of worlds, an illustration of mine I did with Photoshop. Part of a certification process for Crehana inspired in dogs playing fetch, and since I wanted to do something epic, just bumped up the proportions out of scale. A really fun process though.</dd>
-
-                <img src="/img/devorador.jpg" alt="Devorador de mundos, an illustration by Juan Diaz.">
-                
-                <a href="#" target="_blank" disabled>Just for show</a>
+                <dd><img src="/img/devorador.jpg" alt="Devorador de mundos, an illustration by Juan Diaz."></dd>                
+                <dd><a href="#" target="_blank" disabled>Just for show</a></dd>
             </dl>
         </section>
 

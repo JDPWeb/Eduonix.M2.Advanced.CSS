@@ -2,6 +2,10 @@
     font-size: 16px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f8f1f1;
@@ -32,33 +36,48 @@ body{
     line-height: 2.8rem;
 }
 
-.button{
-    text-decoration: none;
-    color: #dc4040;
-    font-weight: 700;
-    background-color: #f8f1f1;
-    padding: 1rem 2rem;
-    border: 5px solid transparent;
-    -moz-border-image: -moz-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
-    -webkit-border-image: -webkit-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
-    border-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
-    border-image-slice: 1;
-    border-radius: 10px;
-    transition: all 2s;
+.card{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    width: 400px;
+    margin: 2rem auto;
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    border-radius: 5px;
 }
 
-.button:hover{
+.card dt{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2rem;
+    text-align: center;
+}
+
+.card dd{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 90%;
+    line-height: 2rem;
+}
+
+.button{
     text-decoration: none;
     color: #f8f1f1;
     font-weight: 700;
-    background-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
+    display: block;
+    text-align: center;
+    min-width: 190px;
+    max-width: 240px;
+    margin: 2.4rem auto;
     padding: 1rem 2rem;
-    border: 5px solid transparent;
+    background-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
     -moz-border-image: -moz-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
-    -webkit-border-image: -webkit-linear-gradient(top left, #dc4040 0%, #b72e72 100%);
-    border-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
-    border-image-slice: 1;
-    border-radius: 10px;
+    -webkit-border-image: -webkit-linear-gradient(top left, #dc4040 0%, #b72e72 100%);    
+    border-radius: 5px;
+}
+
+.button:hover{
+    
 }
 
 section{
@@ -67,7 +86,7 @@ section{
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 3.2rem;
 }
 
 #home{
@@ -166,3 +185,31 @@ input:checked ~ .tab-content{
     max-height: 100vh;
     padding: 2rem;
 }
+
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+    //* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  #hamnav {
+    position: sticky;
+    top: 0;
+  }

@@ -40,7 +40,7 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 400px;
+    width: 95%;
     margin: 2rem auto;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
     border-radius: 5px;
@@ -116,7 +116,7 @@ section{
 
 #home img{
     border-radius: 50%;
-    max-width: 400px;
+    max-width: 95%;
     height: auto;
     margin: 0 auto;
 }

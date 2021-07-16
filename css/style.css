@@ -39,7 +39,7 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    height: auto;
     width: 400px;
     margin: 2rem auto;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
@@ -131,7 +131,7 @@ p{
 
 iframe{
     margin: 0 auto;
-    clear: both;
+    max-width: 100%;
     display: block;
 }
 
@@ -157,6 +157,8 @@ input{
 
 .tabs{
     border-radius: 10px;
+    max-width: 95%;
+    margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
@@ -164,13 +166,19 @@ input{
 .tab{
     width: 100%;
     overflow: hidden;
+    background-image: linear-gradient(to bottom right, #dc4040 0%, #b72e72 100%);
 }
 
 .tab-label{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 3.2rem;
     padding: 1rem;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f8f1f1;
 }
 
 .tab-label:hover{
@@ -188,14 +196,13 @@ input{
 .tab-content{
     max-height: 0;
     padding: 0 1rem;
-    color: #151025;
-    background: #fff;
+    color: #070303;
+    background: #f8f1f1;
     transition: all 0.35s;
 }
 
-/*Color change indicate which tab*/
 input:checked +.tab-label{
-    background: rgba(10, 47, 158, 1);
+    background-image: linear-gradient(to bottom right, #a41313 0%, #831049 100%);
 }
 
 input:checked + .tab-label:after{
@@ -206,6 +213,8 @@ input:checked ~ .tab-content{
     max-height: 100vh;
     padding: 2rem;
 }
+
+/*--------Media Queries--------*/
 
 @media screen and (max-width: 768px){
 

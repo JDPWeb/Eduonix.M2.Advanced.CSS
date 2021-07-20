@@ -104,7 +104,6 @@ header{
 
 .main-nav{
     height: 90px;
-    scroll-margin-top: 5rem;
 }
 
 .logo{
@@ -163,11 +162,16 @@ section{
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    margin: 3.6rem auto 3.2rem;
+    margin: 0 auto 3.2rem;
+}
+
+.anchor{
+    scroll-margin-top: 6.4rem;
 }
 
 #home{
     background-image: linear-gradient(#31bacc,#f8f1f1);
+    margin: 3.6rem auto 3.2rem;
 }
 
 #home img{
@@ -321,50 +325,3 @@ input:checked ~ .tab-content{
         color: blue;
     }
 }
-
-/*
-
-@media screen and (max-width: 768px){
-
-    nav{
-        height: 3.1rem;
-        display: inline-block;
-    }
-    ** (A) BREAK INTO VERTICAL MENU **
-    #hamitems a {
-        text-decoration: none;
-        box-sizing: border-box;
-        display: block;
-        color: #070303;
-        background-color: #31bacc;
-        width: 100%;
-        border-top: 1px solid #333;
-        font-size: 1.6rem;
-        padding: 1rem 1rem;
-    }
-    ** (B) SHOW HAMBURGER ICON **
-    #hamnav label { 
-        display: inline-block;
-    }
-
-    label[for="hamburger"]{
-        font-size: 3rem;
-        margin-top: 1rem;
-        padding-left: 1rem;
-    }
-  
-   ** (C) TOGGLE SHOW/HIDE MENU **
-    #hamitems { 
-        display: none; }
-    #hamnav input:checked ~ #hamitems { 
-        display: block; }
-  }
-
-  #hamnav {
-        position: sticky;
-        top: 0;
-  }
-
-  */
-
-  

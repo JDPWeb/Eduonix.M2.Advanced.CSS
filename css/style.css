@@ -18,6 +18,7 @@ body{
 
 .mainTitle{
     font-family: 'Roboto', sans-serif;
+    color: #070303;
     font-weight: 700;
     font-size: 3rem;
     line-height: 4rem;
@@ -40,7 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 95%;
+    width: 80%;
     margin: 2rem auto;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
     border-radius: 5px;
@@ -103,14 +104,14 @@ header{
 }
 
 .main-nav{
-    height: 90px;
+    height: 5.6rem;
 }
 
 .logo{
-    color: #fff;
-    line-height: 90px;
-    font-size: 30px;
-    font-weight: bold;
+    color: #f8f1f1;
+    line-height: 5.6rem;
+    font-size: 2rem;
+    font-weight: 700;
     text-decoration: none;
     margin-left: 30px;
 }
@@ -118,7 +119,7 @@ header{
 .nav-links{
     list-style: none;
     float: right;
-    line-height: 90px;
+    line-height: 5.6rem;
     margin: 0;
     padding: 0;
 }
@@ -129,17 +130,17 @@ header{
 }
 
 .nav-links li a{
-    color: #fff;
+    color: #f8f1f1;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
     transition: all 0.3s linear 0s;
     text-transform: uppercase;
 }
 
 .nav-links li a:hover{
-    color: #7ebcb9;
+    color: #030607;
     padding-bottom: 7px;
-    border-bottom: 2px solid #7ebcb9;
+    border-bottom: 2px solid #030607;
 }
 
 #check{
@@ -147,8 +148,8 @@ header{
 }
 
 .menu-btn{
-    font-size: 25px;
-    color: #fff;
+    font-size: 1.6rem;
+    color: #f8f1f1;
     float: right;
     line-height: 90px;
     margin-right: 40px;
@@ -174,9 +175,8 @@ section{
     margin: 3.6rem auto 3.2rem;
 }
 
-#home img{
+#portrait{
     border-radius: 50%;
-    max-width: 95%;
     height: auto;
     margin: 0 auto;
 }
@@ -276,6 +276,38 @@ input:checked ~ .tab-content{
 
 /*--------Media Queries--------*/
 
+@media (min-width: 801px){
+    .mainTitle{
+        font-family: 'Roboto', sans-serif;
+        color: #070303;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 4rem;
+        margin: 2rem 1rem;
+    }
+    
+    .title2{
+        font-weight: 300;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .bigText{
+        font-weight: 300;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+    
+    #portrait{
+        max-width: 32rem;
+        height: auto;
+    }    
+
+}
+
 @media (max-width: 800px){
 
     .nav-links{
@@ -285,7 +317,7 @@ input:checked ~ .tab-content{
         text-align: center;
         transition: all 0.5s;
         right: -100%;
-        background: #222831;
+        background: #040c0f;
     }
 
     .nav-links li{
@@ -297,6 +329,8 @@ input:checked ~ .tab-content{
     }
 
     .nav-links li a:hover{
+        color: #f8f1f1;
+        font-weight: 700;
         border-bottom: none;
     }
 
@@ -306,6 +340,17 @@ input:checked ~ .tab-content{
 
     #check:checked ~ .nav-links{
         right: 0;
+    }
+
+    #portrait{
+        max-width: 70%;
+        min-width: 26rem;
+        height: auto;
+    }
+
+    .card{
+        max-width: 70%;
+        min-width: 25rem;
     }
 
 }
@@ -322,6 +367,7 @@ input:checked ~ .tab-content{
     }
 
     .menu-btn:focus{
-        color: blue;
+        font-size: 1.;
     }
+    
 }

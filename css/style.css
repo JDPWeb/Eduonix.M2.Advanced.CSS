@@ -38,6 +38,7 @@ body{
 }
 
 .card{
+    background-color: #e5f6fa;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -101,6 +102,7 @@ header{
     background: #31bacc;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .main-nav{
@@ -196,15 +198,16 @@ iframe{
 }
 
 footer{
-    height: 4rem;
+    height: 4.4rem;
     background-color: #31bacc;
     text-align: center;
     overflow: hidden;
 }
 
 footer p{
-    margin-top: 1rem;
+    margin: 1rem auto 0;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /*CSS Accordion*/
@@ -257,7 +260,7 @@ input{
     max-height: 0;
     padding: 0 1rem;
     color: #070303;
-    background: #f8f1f1;
+    background: #e5f6fa;
     transition: all 0.35s;
 }
 
@@ -304,7 +307,22 @@ input:checked ~ .tab-content{
     #portrait{
         max-width: 32rem;
         height: auto;
-    }    
+    }
+    
+    .card img{
+        max-width: 50%;
+        max-height: 25rem;
+        margin: 1rem auto;
+    }
+
+    p{
+        max-width: 56rem;
+    }
+
+    .rogue{
+        margin: 1.6rem auto;
+        padding: 0 1rem;
+    }
 
 }
 
